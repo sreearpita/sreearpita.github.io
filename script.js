@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form Submission
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        /*
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
@@ -60,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Oops! There was a problem sending your message.');
             });
         });
+        */
     }
     
     // Add smooth scrolling for all links
