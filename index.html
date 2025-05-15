@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated background gradient -->
+    <div class="background-gradient"></div>
+    
     <header>
         <nav>
             <div class="logo">Sree Arpita Patra</div>
@@ -29,16 +32,20 @@
     </header>
 
     <section class="hero" id="about">
+        <!-- Remove floating particles -->
         <div class="hero-content">
             <h1>Sree Arpita Patra</h1>
-            <h2>Software Engineer</h2>
-            <p>Experienced Software Engineer with expertise in Angular, Java, Spring Boot, and Cloud technologies. Skilled in Microservices, Docker, and Kubernetes, with a focus on scalable, high-performance applications.</p>
+            <h2>Full Stack Java Developer</h2>
+            <p>Full Stack Developer with 5+ years of hands-on experience delivering robust, scalable, and high-performance web applications. Specializing in Angular, Java, Spring Boot, and microservices architecture, with expertise across telecom, e-commerce, and fintech domains.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn primary-btn">Contact Me</a>
                 <a href="#projects" class="btn secondary-btn">View Projects</a>
             </div>
         </div>
     </section>
+
+    <!-- Wave divider -->
+    <!--  <div class="section-divider wave"></div> -->
 
     <section class="experience" id="experience">
         <div class="container">
@@ -47,13 +54,13 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>SVC Info Developer II</h3>
-                        <h4>Hewlett Packard Enterprises, Bengaluru, India</h4>
-                        <p class="timeline-date">June 2022 – Nov 2024</p>
+                        <h4>Hewlett Packard Enterprise (HPE), Bengaluru, India</h4>
+                        <p class="timeline-date">April 2022 – Nov 2024</p>
                         <ul>
-                            <li>Led migration from monolithic to microservices-based architecture.</li>
-                            <li>Built interactive dashboards with Angular & TypeScript, aggregating data from 10+ sources.</li>
-                            <li>Developed client management software for 20+ clients, improving efficiency by 30%.</li>
-                            <li><strong>Technologies Used:</strong> Angular, TypeScript, Node.js, Java, Spring Boot, MySQL.</li>
+                            <li>Developed analytical dashboards with Angular/TypeScript for international telecom clients (Safari, DU Dubai, Telefonica Spain)</li>
+                            <li>Created Alarm Monitoring Systems with protocol categorization and severity classification</li>
+                            <li>Led scratch-built project for DU Dubai implementing resource management features</li>
+                            <li>Reverse-engineered legacy telecom systems, mapping complex flows for modernization</li>
                         </ul>
                     </div>
                 </div>
@@ -61,29 +68,33 @@
                     <div class="timeline-content">
                         <h3>Software Engineer</h3>
                         <h4>Cognizant Technology Solutions, Bengaluru, India</h4>
-                        <p class="timeline-date">June 2019 – April 2022</p>
+                        <p class="timeline-date">May 2020 – April 2022</p>
                         <ul>
-                            <li>Developed merchant onboarding portal for PayPal, handling 5000+ merchants.</li>
-                            <li>Automated KYC and account validation, reducing onboarding time by 30%.</li>
-                            <li>Designed secure REST APIs and implemented Spring Batch for data processing.</li>
-                            <li><strong>Technologies Used:</strong> React, Java, Spring Boot, MySQL.</li>
+                            <li>Built merchant onboarding platform for PayPal, ensuring high availability and compliance</li>
+                            <li>Refactored monolithic API into three discrete services for improved throughput</li>
+                            <li>Created bulk onboarding engine for Facebook Marketplace integration using Spring Batch</li>
+                            <li>Contributed to Macy's e-commerce Product Recommendation Engine</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Software Engineer Intern</h3>
+                        <h3>Intern</h3>
                         <h4>Cognizant Technology Solutions, Hyderabad, India</h4>
-                        <p class="timeline-date">Jan 2019 – May 2019</p>
+                        <p class="timeline-date">Jan 2019 – April 2019</p>
                         <ul>
-                            <li>Trained in Full Stack Web Development with a focus on Docker & Kubernetes.</li>
-                            <li>Built and deployed microservices-based applications.</li>
+                            <li>Selected for elite Full Stack Development Program</li>
+                            <li>Trained on Frontend (Angular, JS) and Backend (Java, Spring Boot, Docker)</li>
+                            <li>Delivered hands-on projects with professional mentorship</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Tilt divider -->
+    <div class="section-divider tilt"></div>
 
     <section class="skills" id="skills">
         <div class="container">
@@ -93,9 +104,13 @@
                     <h3>Frontend</h3>
                     <div class="skill-items">
                         <div class="skill-item">Angular</div>
-                        <div class="skill-item">TypeScript</div>
                         <div class="skill-item">React</div>
+                        <div class="skill-item">TypeScript</div>
                         <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">Bootstrap</div>
+                        <div class="skill-item">Material UI</div>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -103,37 +118,57 @@
                     <div class="skill-items">
                         <div class="skill-item">Java</div>
                         <div class="skill-item">Spring Boot</div>
+                        <div class="skill-item">Spring Batch</div>
+                        <div class="skill-item">Spring AI</div>
+                        <div class="skill-item">Hibernate</div>
+                        <div class="skill-item">JPA</div>
                         <div class="skill-item">Node.js</div>
                         <div class="skill-item">Express.js</div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">AWS</div>
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">Kubernetes</div>
-                        <div class="skill-item">CI/CD</div>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3>Database</h3>
                     <div class="skill-items">
                         <div class="skill-item">MySQL</div>
-                        <div class="skill-item">PL/SQL</div>
                         <div class="skill-item">Oracle</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">H2</div>
+                        <div class="skill-item">Cassandra</div>
+                        <div class="skill-item">Neo4j</div>
+                        <div class="skill-item">MongoDB</div>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>System Design</h3>
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Maven</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">Kubernetes</div>
+                        <div class="skill-item">Jenkins</div>
+                        <div class="skill-item">CI/CD</div>
+                        <div class="skill-item">Nginx</div>
+                        <div class="skill-item">Postman</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Architecture & Testing</h3>
                     <div class="skill-items">
                         <div class="skill-item">Microservices</div>
-                        <div class="skill-item">API Development</div>
+                        <div class="skill-item">REST APIs</div>
+                        <div class="skill-item">GraphQL</div>
+                        <div class="skill-item">Kafka</div>
+                        <div class="skill-item">JUnit</div>
+                        <div class="skill-item">Mockito</div>
+                        <div class="skill-item">TestNG</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Wave divider (inverted) -->
+    <div class="section-divider wave" style="transform: rotate(180deg);"></div>
 
     <section class="projects" id="projects">
         <div class="container">
@@ -141,39 +176,87 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-content">
+                        <h3>AI Friend</h3>
+                        <p class="project-date">April 2025</p>
+                        <p>A privacy-first, locally hosted AI chatbot that mimics friendly, intelligent conversation. Built using Spring Boot and integrated with Mistral's LLM using Ollama, featuring secure backend design and natural language processing.</p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Mistral LLM</span>
+                            <span>Ollama</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sreearpita/AI-Friend" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Flowelle</h3>
+                        <p class="project-date">March 2025</p>
+                        <p>A full-stack women's health and menstrual cycle tracking app designed for global users. Features include period prediction, health report uploads, user authentication, and doctor consultation planning.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sreearpita/Flowelle" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>MakeMyBooking</h3>
+                        <p class="project-date">February 2025</p>
+                        <p>A dynamic event ticket booking platform supporting movies, concerts, theater, and sports events. Features include event search, category filters, booking cart, and ticket confirmation.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Spring Boot</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sreearpita/MakeMyBooking" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
                         <h3>Project Q</h3>
-                        <p class="project-date">June 2021 – July 2021</p>
-                        <p>Developed a GraphQL-based e-commerce platform using Node.js & Express.js.</p>
+                        <p class="project-date">2021</p>
+                        <p>An experimental e-commerce project using Node.js, Express.js, and Apollo Server with GraphQL APIs. Implements queries, mutations, and subscriptions for real-time data exchange.</p>
                         <div class="project-tech">
                             <span>Node.js</span>
                             <span>Express.js</span>
                             <span>GraphQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/sreearpita/Project-Q" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-content">
                         <h3>Essentials Store</h3>
-                        <p class="project-date">Feb 2021 – Mar 2021</p>
-                        <p>Built an online marketplace using Node.js & MySQL, integrating secure checkout.</p>
+                        <p class="project-date">2021</p>
+                        <p>A daily essentials marketplace using Node.js, Express, and MySQL with Sequelize ORM. Includes user roles (admin/shopper), CRUD operations, shopping cart, and wishlist functionalities.</p>
                         <div class="project-tech">
                             <span>Node.js</span>
-                            <span>MySQL</span>
                             <span>Express.js</span>
+                            <span>MySQL</span>
+                            <span>Sequelize</span>
+                            <span>EJS</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="https://github.com/sreearpita/Essentials-Store" target="_blank" class="project-link"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Tilt divider (inverted) -->
+    <div class="section-divider tilt" style="transform: rotate(180deg);"></div>
 
     <section class="education" id="education">
         <div class="container">
@@ -183,6 +266,11 @@
                     <h3>B.Tech, Computer Science & Engineering</h3>
                     <h4>C.V Raman College of Engineering, Bhubaneswar, India</h4>
                     <p>Aug 2015 – May 2019</p>
+                </div>
+                <div class="education-item">
+                    <h3>Diploma in IT Architecture</h3>
+                    <h4>CDAC (Centre for Development of Advanced Computing), India</h4>
+                    <p>April 2016 – March 2019</p>
                 </div>
                 <div class="certifications">
                     <h3>Certifications & Trainings</h3>
@@ -195,6 +283,9 @@
         </div>
     </section>
 
+    <!-- Wave divider -->
+    <div class="section-divider wave"></div>
+
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Contact Me</h2>
@@ -202,24 +293,23 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>River Valley, Singapore</p>
+                        <p>Clementi West, Singapore</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>+(65) 801 66724</p>
+                        <p>+65 8016 6724</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <p>sreearpitapatra@gmail.com</p>
                     </div>
                     <div class="contact-item">
-                        <i class="fas fa-info-circle"></i>
-                        <p>Work Authorization: Eligible to work in Singapore</p>
+                        <i class="fas fa-language"></i>
+                        <p>Languages: English, Hindi, Odia, Bengali</p>
                     </div>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/sree-arpita-patra" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/sreearpita" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/SreeArpitaPatra" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
