@@ -175,6 +175,68 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 600);
         });
     });
+
+    // Dynamically refresh project cards from GitHub
+    async function loadLatestProjects() {
+        const projectsGrid = document.getElementById('projectsGrid');
+        if (!projectsGrid) return;
+
+        const preferredRepoOrder = ['AI-Friend', 'Flowelle', 'MakeMyBooking', 'Project-Q', 'Essentials-Store'];
+
+        try {
+            const response = await fetch('https://api.github.com/users/sreearpita/repos?per_page=100&sort=updated');
+            if (!response.ok) return;
+
+            const repos = await response.json();
+            const repoMap = new Map(repos.map(repo => [repo.name, repo]));
+
+            const selectedRepos = preferredRepoOrder
+                .map(repoName => repoMap.get(repoName))
+                .filter(Boolean)
+                .slice(0, 5);
+
+            if (!selectedRepos.length) return;
+
+            const formatDate = (isoDate) => {
+                const date = new Date(isoDate);
+                return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+            };
+
+            const projectCards = selectedRepos.map(repo => {
+                const safeDescription = repo.description || 'Project details will be updated soon.';
+                const updatedDate = formatDate(repo.pushed_at);
+                const techStack = [repo.language, ...(repo.topics || []).slice(0, 2)].filter(Boolean);
+                const techBadges = techStack.length
+                    ? techStack.map(tag => `<span>${tag}</span>`).join('')
+                    : '<span>Source Code</span>';
+
+                const demoLink = repo.homepage
+                    ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fas fa-up-right-from-square"></i> Live Demo</a>`
+                    : '';
+
+                return `
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>${repo.name}</h3>
+                            <p class="project-date">Updated ${updatedDate}</p>
+                            <p>${safeDescription}</p>
+                            <div class="project-tech">${techBadges}</div>
+                            <div class="project-links">
+                                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> View Code</a>
+                                ${demoLink}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            projectsGrid.innerHTML = projectCards;
+        } catch (error) {
+            // Keep static fallback cards if GitHub API is unavailable
+        }
+    }
+
+    loadLatestProjects();
 }); 
 
 // Cursor and ripple styles
