@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 600);
         });
     });
+
 }); 
 
 // Cursor and ripple styles
