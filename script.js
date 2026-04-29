@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+
+    if (!burger || !nav) return;
     
     burger.addEventListener('click', () => {
         // Toggle Nav
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Add sending animation to button
             if (button) {
                 button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                }
+            }
             
             // Form will submit normally since it has an action attribute
         });
@@ -77,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
             const headerHeight = document.querySelector('header').offsetHeight;
             
             if (window.pageYOffset >= sectionTop - headerHeight - 10) {
