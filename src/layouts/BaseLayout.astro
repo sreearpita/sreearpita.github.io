@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = 'Sree Arpita Patra - Senior Full Stack Java Engineer',
+  description = 'Portfolio of Sree Arpita Patra, a full-stack Java engineer building reliable web systems across telecom, fintech, and commerce.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#12120f" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

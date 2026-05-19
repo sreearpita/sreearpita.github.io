@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  certifications,
+  education,
+  experience,
+  profile,
+  projects,
+  skills,
+} from '../data/portfolio';
+
+const featuredProjects = projects.filter((project) => project.featured);
+---
+
+<BaseLayout title={`${profile.name} - Resume`}>
+  <main class="resume-page">
+    <header class="resume-header">
+      <a href="/" class="text-link">Back to portfolio</a>
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h1>{profile.name}</h1>
+        <p>{profile.title}</p>
+        <p>{profile.positioning}</p>
+      </div>
+      <address>
+        <a href={`mailto:${profile.email}`}>{profile.email}</a>
+        <span>{profile.location}</span>
+        <a href={profile.linkedIn}>LinkedIn</a>
+        <a href={profile.github}>GitHub</a>
+      </address>
+    </header>
+
+    <section class="resume-section">
+      <h2>Experience</h2>
+      {experience.map((item) => (
+        <article class="resume-item">
+          <div>
+            <h3>{item.role}</h3>
+            <p>{item.company} - {item.location}</p>
+          </div>
+          <span>{item.period}</span>
+          <p>{item.summary}</p>
+          <ul>
+            {item.highlights.map((highlight) => <li>{highlight}</li>)}
+          </ul>
+        </article>
+      ))}
+    </section>
+
+    <section class="resume-section">
+      <h2>Selected Projects</h2>
+      {featuredProjects.map((project) => (
+        <article class="resume-item">
+          <div>
+            <h3>{project.title}</h3>
+            <p>{project.stack.join(' / ')}</p>
+          </div>
+          <span>{project.period}</span>
+          <p>{project.summary}</p>
+          <p><strong>Role:</strong> {project.role}</p>
+        </article>
+      ))}
+    </section>
+
+    <section class="resume-section">
+      <h2>Skills</h2>
+      <div class="resume-skills">
+        {skills.map((group) => (
+          <article>
+            <h3>{group.label}</h3>
+            <p>{group.tools.join(', ')}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2>Education and Training</h2>
+      {education.map((item) => (
+        <article class="resume-item">
+          <div>
+            <h3>{item.qualification}</h3>
+            <p>{item.institution}</p>
+          </div>
+          <span>{item.period}</span>
+        </article>
+      ))}
+      <article class="resume-item">
+        <h3>Certifications</h3>
+        <ul>
+          {certifications.map((item) => <li>{item}</li>)}
+        </ul>
+      </article>
+    </section>
+  </main>
+</BaseLayout>
