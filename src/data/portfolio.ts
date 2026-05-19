@@ -46,7 +46,7 @@ export type SkillGroup = {
 
 export const profile: Profile = {
   name: 'Sree Arpita Patra',
-  title: 'Senior Full Stack Java Engineer',
+  title: 'Software Engineer',
   positioning:
     'I build reliable web systems across telecom, fintech, and commerce with Java, Spring Boot, Angular, React, and microservices.',
   email: 'sreearpitapatra@gmail.com',
@@ -74,7 +74,7 @@ export const metrics: Metric[] = [
   {
     value: 'SG',
     label: 'Based in Singapore',
-    detail: 'Available for full-stack Java and platform engineering roles.',
+    detail: 'Available for software engineering and platform roles.',
   },
 ];
 
