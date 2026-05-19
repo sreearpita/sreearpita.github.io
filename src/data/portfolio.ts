@@ -48,7 +48,7 @@ export const profile: Profile = {
   name: 'Sree Arpita Patra',
   title: 'Software Engineer',
   positioning:
-    'I build reliable web systems across telecom, fintech, and commerce with Java, Spring Boot, Angular, React, and microservices.',
+    'I build reliable web systems across telecom, fintech, and commerce with Java, Spring Boot, Angular, React, Flutter, and microservices.',
   email: 'sreearpitapatra@gmail.com',
   location: 'Singapore',
   linkedIn: 'https://www.linkedin.com/in/sree-arpita-patra',
@@ -69,7 +69,7 @@ export const metrics: Metric[] = [
   {
     value: '6',
     label: 'Selected builds',
-    detail: 'Full-stack projects spanning Spring Boot, React, Angular, Node, and SQL.',
+    detail: 'Full-stack projects spanning Spring Boot, Flutter, React, Angular, Node, and SQL.',
   },
   {
     value: 'SG',
@@ -87,8 +87,8 @@ export const projects: Project[] = [
     problem:
       'Restaurant ordering flows need to feel fast while still handling menus, carts, customer state, and transactional boundaries.',
     role:
-      'Full-stack engineer shaping the Java/Spring Boot service layer and React user experience.',
-    stack: ['Java', 'Spring Boot', 'React', 'MySQL'],
+      'Full-stack engineer shaping the Java/Spring Boot service layer and Flutter frontend experience.',
+    stack: ['Java', 'Spring Boot', 'Flutter', 'MySQL'],
     links: [
       {
         label: 'Org repository',
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     featured: true,
     highlights: [
       'Modeled core ordering surfaces around browse, cart, checkout, and confirmation states.',
-      'Structured the stack for clear separation between user experience and backend service responsibilities.',
+      'Built the frontend experience with Flutter while keeping backend service responsibilities clear.',
       'Kept the project visible even though it lives under an organization account.',
     ],
   },
@@ -251,8 +251,8 @@ export const experience: Experience[] = [
 export const skills: SkillGroup[] = [
   {
     label: 'Frontend systems',
-    tools: ['Angular', 'React', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
-    proof: 'Dashboards, booking flows, product surfaces, and responsive UI systems.',
+    tools: ['Angular', 'React', 'Flutter', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
+    proof: 'Dashboards, booking flows, mobile-first product surfaces, and responsive UI systems.',
   },
   {
     label: 'Backend engineering',
@@ -266,8 +266,8 @@ export const skills: SkillGroup[] = [
   },
   {
     label: 'Platform and delivery',
-    tools: ['Docker', 'Kubernetes', 'Jenkins', 'Git', 'Maven', 'Postman'],
-    proof: 'CI/CD-aware development, container foundations, and repeatable delivery workflows.',
+    tools: ['AWS', 'DevSecOps', 'CI/CD', 'GitHub Actions', 'Docker', 'Kubernetes', 'Jenkins', 'Git', 'Maven', 'Postman'],
+    proof: 'Cloud-aware delivery, secure development practices, container foundations, and repeatable release workflows.',
   },
   {
     label: 'Architecture and testing',
@@ -277,6 +277,11 @@ export const skills: SkillGroup[] = [
 ];
 
 export const education = [
+  {
+    qualification: 'M.Tech, Software Engineering (Pursuing)',
+    institution: 'National University of Singapore',
+    period: 'Jan 2026 - Dec 2027',
+  },
   {
     qualification: 'B.Tech, Computer Science & Engineering',
     institution: 'C.V Raman College of Engineering, Bhubaneswar, India',
