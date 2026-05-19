@@ -48,7 +48,7 @@ export const profile: Profile = {
   name: 'Sree Arpita Patra',
   title: 'Software Engineer',
   positioning:
-    'I build reliable web systems across telecom, fintech, and commerce with Java, Spring Boot, Angular, React, Flutter, and microservices.',
+    'I design, build, and ship end-to-end software across product, platform, frontend, backend, cloud delivery, and secure engineering practices.',
   email: 'sreearpitapatra@gmail.com',
   location: 'Singapore',
   linkedIn: 'https://www.linkedin.com/in/sree-arpita-patra',
@@ -69,7 +69,7 @@ export const metrics: Metric[] = [
   {
     value: '6',
     label: 'Selected builds',
-    detail: 'Full-stack projects spanning Spring Boot, Flutter, React, Angular, Node, and SQL.',
+    detail: 'Product and platform builds across ordering, AI, health, booking, commerce, and GraphQL APIs.',
   },
   {
     value: 'SG',
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     problem:
       'Restaurant ordering flows need to feel fast while still handling menus, carts, customer state, and transactional boundaries.',
     role:
-      'Full-stack engineer shaping the Java/Spring Boot service layer and Flutter frontend experience.',
+      'Software engineer shaping ordering workflows, service boundaries, data flow, and Flutter frontend experience.',
     stack: ['Java', 'Spring Boot', 'Flutter', 'MySQL'],
     links: [
       {
@@ -106,11 +106,11 @@ export const projects: Project[] = [
     title: 'AI Friend',
     period: 'April 2025',
     summary:
-      'Privacy-first locally hosted AI chatbot using Spring Boot with Mistral through Ollama.',
+      'Privacy-first locally hosted AI chatbot with conversational workflows, local model execution, and service-oriented integration.',
     problem:
       'Personal AI assistants are often cloud-dependent; this build explored friendly conversation while keeping model execution local.',
     role:
-      'Designed the backend integration path, conversation flow, and secure local runtime expectations.',
+      'Designed the integration path, conversation flow, runtime boundaries, and secure local execution expectations.',
     stack: ['Spring Boot', 'Mistral LLM', 'Ollama'],
     links: [
       {
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     highlights: [
       'Integrated local model execution through Ollama instead of relying on hosted inference.',
       'Focused backend behavior on predictable, private chat interactions.',
-      'Used Java service patterns to keep AI integration isolated and maintainable.',
+      'Used service-oriented patterns to keep AI integration isolated and maintainable.',
     ],
   },
   {
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     problem:
       'Health tracking workflows need clarity, privacy, and low-friction reporting for users across markets.',
     role:
-      'Built full-stack product surfaces across React, Spring Boot, and MySQL.',
+      'Designed and implemented product workflows across user experience, application services, and data persistence.',
     stack: ['React', 'Spring Boot', 'MySQL'],
     links: [
       {
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     problem:
       'Booking flows must support category discovery, search, cart state, and confirmation without losing user context.',
     role:
-      'Implemented full-stack event browsing and booking workflows.',
+      'Implemented event discovery, booking, cart, and confirmation workflows across the application stack.',
     stack: ['React', 'Spring Boot', 'MySQL'],
     links: [
       {
@@ -192,7 +192,7 @@ export const projects: Project[] = [
     problem:
       'Commerce systems need role-aware workflows that stay understandable for both administrators and shoppers.',
     role:
-      'Built backend and server-rendered storefront behavior with Node, Express, Sequelize, and MySQL.',
+      'Built role-aware commerce workflows, server-rendered storefront behavior, and relational persistence.',
     stack: ['Node.js', 'Express.js', 'MySQL', 'Sequelize', 'EJS'],
     links: [
       {
@@ -225,7 +225,7 @@ export const experience: Experience[] = [
     location: 'Bengaluru, India',
     period: 'May 2020 - April 2022',
     summary:
-      'Built fintech onboarding services and commerce systems across Java and Node stacks.',
+      'Built fintech onboarding services, commerce systems, batch workflows, and service decomposition initiatives.',
     highlights: [
       'Built merchant onboarding platform capabilities for PayPal.',
       'Refactored a monolithic API into three discrete services for better throughput.',
@@ -239,10 +239,10 @@ export const experience: Experience[] = [
     location: 'Hyderabad, India',
     period: 'Jan 2019 - April 2019',
     summary:
-      'Completed hands-on full-stack training across frontend, backend, and deployment foundations.',
+      'Completed hands-on software engineering training across frontend, backend, deployment, and delivery foundations.',
     highlights: [
-      'Selected for a full-stack development program.',
-      'Trained across Angular, JavaScript, Java, Spring Boot, and Docker.',
+      'Selected for an intensive software development program.',
+      'Trained across frontend engineering, backend services, container basics, and delivery practices.',
       'Delivered mentored projects using professional engineering practices.',
     ],
   },
@@ -255,9 +255,9 @@ export const skills: SkillGroup[] = [
     proof: 'Dashboards, booking flows, mobile-first product surfaces, and responsive UI systems.',
   },
   {
-    label: 'Backend engineering',
-    tools: ['Java', 'Spring Boot', 'Spring Batch', 'Hibernate', 'JPA', 'Node.js'],
-    proof: 'Service APIs, batch onboarding, persistence layers, and domain workflows.',
+    label: 'Backend and services',
+    tools: ['Node.js', 'Java', 'Spring Boot', 'Spring Batch', 'Hibernate', 'JPA'],
+    proof: 'Service APIs, batch onboarding, persistence layers, domain workflows, and integration boundaries.',
   },
   {
     label: 'Data and integration',
@@ -272,7 +272,7 @@ export const skills: SkillGroup[] = [
   {
     label: 'Architecture and testing',
     tools: ['Microservices', 'REST APIs', 'Kafka', 'JUnit', 'Mockito', 'TestNG'],
-    proof: 'Modernization, service decomposition, monitoring flows, and testable boundaries.',
+    proof: 'Systems modernization, service decomposition, monitoring flows, and testable engineering boundaries.',
   },
 ];
 
