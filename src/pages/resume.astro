@@ -10,12 +10,23 @@ import {
 } from '../data/portfolio';
 
 const featuredProjects = projects.filter((project) => project.featured);
+const resumePdfPath = '/resume/sree-arpita-patra-resume.pdf';
 ---
 
 <BaseLayout title={`${profile.name} - Resume`}>
   <main class="resume-page">
     <header class="resume-header">
-      <a href="/" class="text-link">Back to portfolio</a>
+      <div class="resume-toolbar">
+        <a href="/" class="text-link">Back to portfolio</a>
+        <a
+          class="button button-primary"
+          href={resumePdfPath}
+          download="Sree-Arpita-Patra-Resume.pdf"
+        >
+          Download resume
+          <span aria-hidden="true">-&gt;</span>
+        </a>
+      </div>
       <div>
         <p class="eyebrow">Resume</p>
         <h1>{profile.name}</h1>

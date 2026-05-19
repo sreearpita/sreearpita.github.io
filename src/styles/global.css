@@ -723,6 +723,14 @@ textarea {
   padding-bottom: 32px;
 }
 
+.resume-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
 .resume-header h1 {
   font-size: 4rem;
 }
@@ -922,20 +930,47 @@ textarea {
     color-scheme: light;
   }
 
+  @page {
+    margin: 0.45in;
+  }
+
   body {
-    background: #fff;
-    color: #111;
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt;
+    line-height: 1.45;
   }
 
   .site-header,
   .site-footer,
-  .text-link {
+  .text-link,
+  .resume-toolbar {
     display: none !important;
   }
 
   .resume-page {
     max-width: none;
     padding: 0;
+    color: #111;
+  }
+
+  .resume-header {
+    gap: 12px;
+    padding-bottom: 18px;
+  }
+
+  .resume-header .eyebrow {
+    display: none;
+  }
+
+  .resume-header h1 {
+    color: #111;
+    font-size: 28pt;
+    line-height: 1.05;
+  }
+
+  .resume-header p {
+    margin: 0 0 8px;
   }
 
   .resume-page p,
@@ -946,10 +981,48 @@ textarea {
 
   .resume-section,
   .resume-header {
-    border-color: #ccc;
+    border-color: #d8d8d8;
+  }
+
+  .resume-section {
+    padding: 18px 0;
+  }
+
+  .resume-section h2 {
+    margin-bottom: 12px;
+    color: #111;
+    font-size: 9.5pt;
+    letter-spacing: 0.04em;
+  }
+
+  .resume-item {
+    break-inside: avoid;
+    gap: 4px 18px;
+    margin-top: 12px;
+  }
+
+  .resume-item h3,
+  .resume-skills h3 {
+    color: #111;
+    font-size: 11pt;
+  }
+
+  .resume-item span {
+    color: #444;
+  }
+
+  .resume-item ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+  }
+
+  .resume-skills {
+    gap: 8px 16px;
   }
 
   .resume-skills article {
-    border-color: #ccc;
+    break-inside: avoid;
+    border: 0;
+    padding: 0;
   }
 }

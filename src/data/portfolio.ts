@@ -91,8 +91,8 @@ export const projects: Project[] = [
     stack: ['Java', 'Spring Boot', 'Flutter', 'MySQL'],
     links: [
       {
-        label: 'Org repository',
-        href: 'https://github.com/orgs/swipe2eat/repositories',
+        label: 'GitHub org',
+        href: 'https://github.com/NUS-MTechSE-DMSS',
       },
     ],
     featured: true,
