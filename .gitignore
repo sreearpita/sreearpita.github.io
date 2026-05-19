@@ -6,3 +6,4 @@ Resources/
 npm-debug.log*
 output/
 .playwright-cli/
+!/.nojekyll
